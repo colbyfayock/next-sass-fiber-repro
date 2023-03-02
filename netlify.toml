@@ -1,0 +1,115 @@
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/FYQX5Vs"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/ecommcourse"
+  to = "https://egghead.io/courses/ecommerce-product-management-storefront-with-graphcms-snipcart-next-js-13cc0534?af=atzgap"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/eggheadecommerce"
+  to = "https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/harperdb"
+  to = "https://harperdb.io/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/levelup"
+  to = "https://www.leveluptutorials.com/?ref=fayock"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/leveluppro"
+  to = "https://www.leveluptutorials.com/pro?ref=fayock"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/levelupecommerce"
+  to = "https://www.leveluptutorials.com/tutorials/ecommerce-on-the-jamstack-with-snipcart-next-js-and-wordpress?ref=fayock"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/levelupsnipcart"
+  to = "https://app.snipcart.com/register?utm_source=levelup&utm_term=colbyfayock"
+  status = 302
+  force = true
+  
+
+[[redirects]]
+  from = "/mediaworkshop"
+  to = "https://github.com/colbyfayock/media-ecommerce-workshop"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/snipcart"
+  to = "https://app.snipcart.com/register?utm_source=youtube&utm_term=colbyfayock"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/stream"
+  to = "https://gstrm.io/colbyfayockmaker"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/streamreact"
+  to = "https://gstrm.io/colbyfayockreact"
+  status = 302
+  force = true
+  
+
+## Misc
+
+[[redirects]]
+  from = "/swag"
+  to = "https://forms.gle/S3asFUGNFBJ8VmJHA"
+  status = 302
+  force = true
+
+## Sponsors / Affiliates
+
+[[redirects]]
+  from = "/butter"
+  to = "https://buttercms.com/?utm_source=colbyfayock&utm_medium=affiliate&utm_campaign=affiliate"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/buttergatsby"
+  to = "https://buttercms.com/docs/api-client/gatsbyjs?utm_source=colbyfayock&utm_medium=affiliate&utm_campaign=affiliate#Quickstart"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/clerk"
+  to = "https://clerk.dev/?utm_source=youtube&utm_medium=influencer&utm_campaign=colby&utm_content=home"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/clerknextjs"
+  to = "https://clerk.dev/docs/nextjs/overview?utm_source=youtube&utm_medium=influencer&utm_campaign=colby&utm_content=nextjs"
+  status = 302
+  force = true
+ 
+## GitHub
+
+[[redirects]]
+  from = "/gearstarter"
+  to = "https://github.com/colbyfayock/space-jelly-gear-starter"
+  status = 302
+  force = true

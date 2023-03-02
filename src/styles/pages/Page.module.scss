@@ -1,0 +1,39 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.pageHeader {
+  margin: 2rem 0 -2.5rem;
+
+  @include gtSmall() {
+    margin: 3rem 0 -1.5rem;
+  }
+
+  h1 {
+    color: white;
+  }
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+
+  @include gtLarge() {
+    flex-direction: row;
+  }
+}
+
+.pageContent {
+  h2 {
+    font-size: 2em;
+    margin-top: 2.6rem;
+  }
+
+  figure {
+    margin: 4rem 0;
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

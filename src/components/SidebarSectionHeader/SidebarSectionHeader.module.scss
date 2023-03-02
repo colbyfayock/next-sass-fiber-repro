@@ -1,0 +1,9 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.sidebarSectionHeader {
+  color: $color-brand-orange-light;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0 0 1em;
+}

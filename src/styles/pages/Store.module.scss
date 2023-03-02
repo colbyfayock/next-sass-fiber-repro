@@ -1,0 +1,177 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+@import "components/Button/Button.module.scss";
+
+.header {
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include gtMedium() {
+      flex-direction: row;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.cart {
+  position: relative;
+  z-index: 999;
+  color: white;
+  flex-grow: 1;
+  font-size: 2em;
+  text-align: center;
+
+  @include gtMedium() {
+    font-size: 1.5em;
+    text-align: right;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.cartLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.2em;
+
+  @include gtMedium() {
+    justify-content: flex-end;
+  }
+
+  svg {
+    margin-right: 0.5em;
+  }
+}
+
+.cartCheckout {
+  @extend .button;
+  font-size: 0.5em;
+  margin-left: 1em;
+}
+
+.cartShipping {
+  display: block;
+  font-size: 0.6em;
+  line-height: 1;
+
+  a {
+    font-size: 0.8em;
+    text-decoration: underline;
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+
+  li {
+    width: 100%;
+    padding: 0.5em;
+
+    @include gtSmall() {
+      width: 50%;
+    }
+
+    @include gtLarge() {
+      width: 33.33%;
+    }
+
+    @include gtHuge() {
+      width: 25%;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.productImage {
+  margin-top: 0;
+
+  img {
+    display: block;
+    border-radius: 2px;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.productTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.productPrice {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.productVariation,
+.productAvailableOn {
+  margin: 0;
+}
+
+.productButton {
+  width: 100%;
+  margin-top: 0.5em;
+
+  a {
+    @extend .button;
+    text-decoration: none;
+  }
+
+  button,
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    svg {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+.poweredBy {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+
+  svg {
+    width: 10em;
+    margin-left: 1em;
+  }
+}
+
+.notes {
+  color: white;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}

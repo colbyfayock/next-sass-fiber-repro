@@ -1,0 +1,62 @@
+{
+  "name": "space-jelly-website",
+  "homepage": "https://spacejelly.dev",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "yarn prettier --config ./config/prettier.config.js --write .",
+    "format:nopath": "yarn prettier --config ./config/prettier.config.js --write",
+    "lint": "yarn prettier --config ./config/prettier.config.js --check .",
+    "start": "next start"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*": "yarn format:nopath"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.9",
+    "@next/font": "^13.2.3",
+    "date-fns": "^2.29.3",
+    "date-fns-timezone": "^0.1.4",
+    "dotenv": "^16.0.3",
+    "fuse.js": "^6.6.2",
+    "graphql": "^16.6.0",
+    "he": "^1.2.0",
+    "loader-utils": "^3.2.1",
+    "next": "^13.2.4-canary.0",
+    "next-cloudinary": "^4.0.0",
+    "next-compose-plugins": "^2.2.1",
+    "parameterize": "^1.0.0",
+    "path": "^0.12.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.3",
+    "rehype-parse": "^8.0.4",
+    "rehype-stringify": "^9.0.3",
+    "rss": "^1.2.2",
+    "style.css": "^1.0.3",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.2"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "lint-staged": ">=13.1.2",
+    "prettier": "2.8.4",
+    "sass": "^1.58.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colbyfayock/spacejelly.dev"
+  },
+  "bugs": {
+    "url": "https://github.com/colbyfayock/spacejelly.dev/issues"
+  }
+}

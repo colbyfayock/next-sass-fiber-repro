@@ -1,0 +1,22 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.button {
+  display: inline-block;
+  color: $color-brand-deepaqua-dark;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.2;
+  background-color: $color-brand-yellow-medium;
+  padding: 0.8em 1.4em;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &[data-display="full"] {
+    display: block;
+    width: 100%;
+  }
+}

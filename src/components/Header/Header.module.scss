@@ -1,0 +1,52 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.header {
+  margin: 2rem 0 -4rem;
+
+  @include gtSmall() {
+    margin: 3rem 0 -3rem;
+  }
+
+  h1 {
+    color: white;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+
+    @include gtSmall() {
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+
+    & + ul {
+      margin-top: 1em;
+
+      @include gtSmall() {
+        margin-top: 1.5em;
+      }
+    }
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.headerContainer {
+}

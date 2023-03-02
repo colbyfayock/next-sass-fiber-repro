@@ -1,0 +1,135 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+@import "components/Button/Button.module.scss";
+
+.postHeader {
+  h1 {
+    color: white;
+  }
+}
+
+.postIntro {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.postAnchors {
+  p {
+    color: $color-brand-orange-light;
+  }
+
+  ul {
+    list-style: none;
+    border-left: solid 4px $color-brand-yellow-medium;
+  }
+
+  li {
+    margin: 0.4em 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.postResources {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  padding: 0;
+  margin: 3em 0;
+
+  li {
+    padding: 0.4em 0.6em;
+  }
+
+  a {
+    white-space: nowrap;
+  }
+}
+
+.postVideo {
+  max-width: 50rem;
+}
+
+.contentSection {
+  background-color: $color-brand-aqua-dark;
+  padding: 4em 0 5em;
+  margin-bottom: 0;
+}
+
+.postMetadata {
+  color: $color-gray-100;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+
+  @include gtSmall() {
+    align-items: center;
+  }
+}
+
+.postFooter {
+  text-align: center;
+  margin-top: 3em;
+  border-top: solid 4px $color-brand-aqua-light;
+  padding-top: 2em;
+}
+
+.postModified {
+  color: $color-brand-aqua-light;
+  font-style: italic;
+}
+
+.relatedSection {
+  background-color: $color-brand-purple-medium;
+  padding: 5em 0 calc(15vw + 2rem); // Additional vw to acommodate for section art
+  margin: 0;
+
+  h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+}
+
+.relatedSectionLink {
+  @include pageLink;
+  text-transform: none;
+}
+
+.relatedPosts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  li {
+    margin: 0 0 0.8em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.relatedPostsCard {
+  h3 {
+    font-size: 1.1em;
+    @include titleLink;
+    text-transform: none;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  a {
+    padding: 0.2em 0;
+  }
+}

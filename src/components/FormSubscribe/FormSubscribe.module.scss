@@ -1,0 +1,23 @@
+@import "styles/settings/__settings";
+
+.formSubscribe {
+  label {
+    display: block;
+    color: rgba(white, 0.7);
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input {
+    margin-bottom: 1.2em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}

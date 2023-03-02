@@ -1,0 +1,13 @@
+@import "styles/util/__util";
+
+.anchors {
+  a {
+    @include titleLink;
+  }
+}
+
+.anchorsHeadline {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}

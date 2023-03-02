@@ -1,0 +1,10 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.sidebarSection {
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

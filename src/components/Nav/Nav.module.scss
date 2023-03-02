@@ -1,0 +1,288 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.nav {
+  display: grid; // Hack to force not overflowing container's width
+  position: relative;
+  z-index: 999;
+  width: 100%;
+
+  @include gtMedium() {
+    margin-top: 0.5em;
+  }
+}
+
+.navPrimary,
+.navSecondary {
+  background: rgba($color-site-background, 0.6);
+}
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+}
+
+.navBarSection {
+  display: flex;
+  align-items: center;
+  order: 1;
+}
+
+/**
+ * Primary Navigation
+ */
+
+.navPrimary {
+  padding: 1em 0 0;
+  margin: 0;
+
+  @include gtHuge() {
+    padding: 1em 0 0.5em;
+  }
+
+  .navBarLinks {
+    margin: 0 -0.8em;
+  }
+}
+
+.navBarSectionLogo {
+  margin: 0 0 1em 0;
+
+  @include gtMedium() {
+    margin: 0 1.5em 0 0;
+  }
+}
+
+.navName {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin: 0;
+
+  svg {
+    display: block;
+  }
+}
+
+.navBarSectionSearch {
+  width: 100%;
+  flex-grow: 1;
+  margin-right: 0;
+
+  @include gtMedium() {
+    width: auto;
+    order: 1;
+  }
+
+  @include gtHuge() {
+    margin-right: 1.5em;
+  }
+}
+
+.navSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+  height: 2.4em;
+  margin: 0;
+
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 0.8em;
+  }
+
+  button {
+    font-size: 1.2em;
+    background: none;
+    padding: 1.045em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    svg {
+      fill: $color-gray-400;
+      transform: translateY(2px);
+    }
+
+    &:focus {
+      svg {
+        fill: $color-primary;
+      }
+    }
+  }
+}
+
+.navSearchResults {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1.5em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  border-top: solid 5px $color-brand-orange-medium;
+  margin-right: -1rem;
+  z-index: 999;
+
+  @include gtSmall() {
+    min-width: 28em;
+    margin-right: 0;
+  }
+
+  [data-search-is-active="true"] & {
+    display: block;
+  }
+
+  p {
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: -0.5em 0;
+  }
+
+  a {
+    display: block;
+    color: $color-gray-800;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0 -0.5em;
+
+    &:focus {
+      outline: 2px solid $color-brand-orange-light;
+    }
+
+    @include withHover() {
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.navBarSectionLinks {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0.5em;
+
+  @include gtSmall() {
+    flex-direction: row;
+  }
+
+  @include gtHuge() {
+    width: auto;
+    order: 1;
+    margin-top: 0;
+  }
+}
+
+.navBarLinks {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &:last-child {
+    &:after {
+      display: none;
+    }
+  }
+
+  &:after {
+    display: none;
+    width: 3px;
+    content: "";
+    height: 1.3em;
+    background-color: $color-brand-aqua-medium;
+    margin: auto 2.2em auto 1.4em;
+
+    @include gtSmall() {
+      display: block;
+    }
+
+    @include gtHuge() {
+      height: 2em;
+    }
+  }
+
+  &,
+  li {
+    height: 100%;
+  }
+
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0.5em 0.8em;
+    outline: 0;
+  }
+}
+
+/**
+ * Secondary Navigation
+ */
+
+.navSecondary {
+  display: grid; // Hack to force not overflowing container's width
+  padding: 0;
+  margin: 0;
+
+  .navBarSection {
+    display: block;
+    overflow: hidden;
+    overflow-x: scroll;
+    text-align: center;
+    padding: 0 2em;
+    margin: 0 -2em;
+
+    @include gtMedium() {
+      overflow: hidden;
+    }
+  }
+
+  .navBarLinks {
+    display: block;
+    height: 2.5em;
+    white-space: nowrap;
+    margin: 0 -0.6em;
+
+    @include gtMedium() {
+      white-space: normal;
+    }
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  a {
+    @include pageLink;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+}
+
+.navSecondaryContainer {
+  display: grid; // Hack to force not overflowing container's width
+}

@@ -1,0 +1,82 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.metadata {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: rgba(white, 0.9);
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  margin: 0 -0.5em;
+
+  @include gtSmall() {
+    flex-direction: row;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  & > li {
+    margin: 0.4em 0.5em;
+
+    @include gtSmall() {
+      margin: 0.8em 1em;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    @include pageLink;
+  }
+}
+
+.metadataAuthor {
+  a {
+    margin-left: 0.2em;
+  }
+
+  address {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+  }
+
+  img {
+    width: 1.4em;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+}
+
+.metadataCategories {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.4em -0.5em;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    white-space: nowrap;
+    padding: 0.4em 0.5em;
+  }
+}
+
+.metadataSticky {
+  font-size: 1.15em;
+  color: $color-gray-300;
+}
